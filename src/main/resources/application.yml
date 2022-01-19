@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.HSQLDialect
+  datasource:
+    driver-class-name: org.hsqldb.jdbcDriver
+    url: jdbc:hsqldb:hsql://64.91.249.118:9001/raptor
+    username: SA
+    password: RAPTOR
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+
+        
